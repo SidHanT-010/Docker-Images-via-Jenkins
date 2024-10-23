@@ -4,7 +4,7 @@ pipeline {
                 stage(&#39;Build Docker Image&#39;) {
                                                     steps {
                                                           script {
-                                                          dockerImage = docker.build(&quot;&lt;your-username&gt;/docker-images-via-jenkins&quot;)
+                                                          dockerImage = docker.build(sidhant10/Docker-Images-via-Jenkins)
                                                                   }
                                                             }
                                                       }
