@@ -1,17 +1,17 @@
 pipeline {
     agent any
           stages {
-                stage(&#39;Build Docker Image&#39;) {
+                stage('Build Docker Image') {
                                                     steps {
                                                           script {
                                                           dockerImage = docker.build("sidhant10/Docker-Images-via-Jenkins")
                                                                   }
                                                             }
                                                       }
-                  stage(&#39;Run Docker Container&#39;) {
+                  stage('Run Docker Container') {
           steps {
                               script {
-                                dockerImage.run(&#39;-d -p 7070:8080&#39;)
+                                dockerImage.run('39;-d -p 7070:8080')
                                       }
                               }
                     }
