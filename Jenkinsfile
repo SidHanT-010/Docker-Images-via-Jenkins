@@ -11,7 +11,7 @@ pipeline {
                   stage('Run Docker Container') {
           steps {
                               script {
-                                dockerImage.run('39;-d -p 7070:8080')
+                                dockerImage.run('-d -p 7070:8080')
                                       }
                               }
                     }
